@@ -1,0 +1,25 @@
+This part include with our RCTEA model with the general version.
+and here specfically, we do with split training for relation and temporal.
+followed by joint neighbourhood consensus refinement and combined trianing.
+
+
+## Datasets
+
+* ent_ids_1: ids for entities in source KG;
+* ent_ids_2: ids for entities in target KG;
+* ref_pairs: the referenc pairs;
+* triples_1: relation triples encoded by ids in source KG;
+* triples_2: relation triples encoded by ids in target KG;
+* time_id: ids for temporal points;
+* rel_id_1: ids for relations in the source KG;
+* rel_id_2: ids for relations in the target KG;
+
+## Environment
+Create the environment with environment.yml file.
+
+Configure dataset to run with 20k and icews, the default dataset is with 180K.
+run main.py to do the training and evaluation. 180K evaluation needs a decent memory to perform.
+
+run main_gen_seeds.py to do the seed generation, test the seed accuracy and generate a certain seeds number.
+
+
